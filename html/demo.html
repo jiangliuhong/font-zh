@@ -1,0 +1,25 @@
+<html>
+<div id="placeholder"></div>
+<script type="text/javascript" src="http://127.0.0.1:8009/web-apps/apps/api/documents/api.js"></script>
+<script>
+    var config = {
+        "document": {
+            "fileType": "docx",
+            "key": "Khirz6zTPdfd7",
+            "title": "Example Document Title.docx",
+            "url": "http://blog.jiangliuhong.top/blogimg/other/test.docx"
+        },
+        "documentType": "text",
+        "editorConfig": {
+            "callbackUrl": "https://example.com/url-to-callback.ashx",
+            "user": {  
+                        "id": "{{.Uid}}",  
+                        "name": "{{.Uname}}"  
+                    }, 
+            "lang": "zh-CN"
+        }
+    };
+    var docEditor = new DocsAPI.DocEditor("placeholder", config);
+</script>
+
+</html>
